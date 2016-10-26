@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+    <!--推荐批量别名，别名就是类名（首字母大写或小写都可以）-->
+    <typeAliases>
+        <package name="com.jason.demo.domain"/>
+        <package name="com.jason.demo.vo"/>
+    </typeAliases>
+
+    <!-- 加载映射文件-->
+    <!-- 配置mapper
+由于使用spring和mybatis的整合包进行mapper扫描，这里不需要配置了。
+必须遵循：mapper.xml和mapper.java文件同名且在一个目录
+ -->
+    <!--<mappers>-->
+        <!--<package name="com.jason.demo.dao"/>-->
+    <!--</mappers>-->
+
+</configuration>

@@ -1,0 +1,75 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+    http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+
+    <!-- 对于注解的Handler 可以单个配置
+     实际开发中加你使用组件扫描
+     -->
+    <!-- 可以扫描controller、service、...
+    这里让扫描controller，指定controller的包
+     -->
+    <context:component-scan base-package="com.jasoncai.firstssm.controller"/>
+
+
+    <!-- 使用mvc:annotation-driven代替上面两个注解映射器和注解适配的配置
+     mvc:annotation-driven默认加载很多的参数绑定方法，
+     比如json转换解析器默认加载了，如果使用mvc:annotation-driven则不用配置上面的RequestMappingHandlerMapping和RequestMappingHandlerAdapter
+     实际开发时使用mvc:annotation-driven
+     -->
+    <!--<mvc:annotation-driven conversion-service="conversionService"-->
+                           <!--validator="validator">-->
+    <mvc:annotation-driven/>
+
+    <!-- 视图解析器
+    解析jsp,默认使用jstl,classpath下要有jstl的包
+    -->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <!-- 配置jsp路径的前缀 -->
+        <property name="prefix" value="/WEB-INF/jsp/"/>
+        <!-- 配置jsp路径的后缀 -->
+        <property name="suffix" value=".jsp"/>
+    </bean>
+
+<!--    &lt;!&ndash; 校验器 &ndash;&gt;
+    <bean id="validator"
+          class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean">
+        &lt;!&ndash; hibernate校验器&ndash;&gt;
+        <property name="providerClass" value="org.hibernate.validator.HibernateValidator" />
+        &lt;!&ndash; 指定校验使用的资源文件，在文件中配置校验错误信息，如果不指定则默认使用classpath下的ValidationMessages.properties &ndash;&gt;
+        <property name="validationMessageSource" ref="messageSource" />
+    </bean>
+    &lt;!&ndash; 校验错误信息配置文件 &ndash;&gt;
+    <bean id="messageSource"
+          class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+        &lt;!&ndash; 资源文件名&ndash;&gt;
+        <property name="basenames">
+            <list>
+                <value>classpath:CustomValidationMessages</value>
+            </list>
+        </property>
+        &lt;!&ndash; 资源文件编码格式 &ndash;&gt;
+        <property name="fileEncodings" value="utf-8" />
+        &lt;!&ndash; 对资源文件内容缓存时间，单位秒 &ndash;&gt;
+        <property name="cacheSeconds" value="120" />
+    </bean>-->
+
+    <!-- 全局异常处理器
+        只要实现HandlerExceptionResolver接口就是全局异常处理器
+    -->
+    <bean class="com.jasoncai.firstssm.exception.resolver.CustomExceptionResolver"></bean>
+
+    <!--注解适配器 -->
+    <!--
+    <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter">
+        <property name="messageConverters">
+            <list>
+                <bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter"></bean>
+            </list>
+        </property>
+    </bean>
+    -->
+</beans>

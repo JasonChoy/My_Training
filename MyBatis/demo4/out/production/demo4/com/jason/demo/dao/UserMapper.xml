@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace 命名空间，作用就是对sql进行分类化管理,理解为sql隔离
+ 注意：使用mapper代理方法开发，namespace有特殊重要的作用
+ -->
+
+<mapper namespace="com.jason.demo.dao.UserMapper">
+    <!-- 订单查询关联用户的resultMap
+        将整个查询的结果映射到Orders中
+     -->
+    <resultMap type="Orders" id="OrdersUserResultMap">
+        <!-- 配置映射的订单信息 -->
+        <!-- id：指定查询列中的唯一标识，订单信息的中的唯 一标识，如果有多个列组成唯一标识，配置多个id
+            column：订单信息的唯一标识列
+            property：订单信息的唯一标识列所映射到Orders中哪个属性
+          -->
+        <id column="id" property="id"/>
+        <result column="user_id" property="userId"/>
+        <result column="number" property="number"/>
+        <result column="createtime" property="createtime"/>
+        <result column="note" property="note"/>
+
+        <!-- 配置映射的关联的用户信息 -->
+        <!-- association：用于映射关联查询单个对象的信息
+        property：要将关联查询的用户信息映射到Orders中哪个属性
+         -->
+        <association property="user"  javaType="User">
+            <!-- id：关联查询用户的唯 一标识
+            column：指定唯 一标识用户信息的列
+            javaType：映射到user的哪个属性
+             -->
+            <id column="user_id" property="id"/>
+            <result column="username" property="username"/>
+            <result column="sex" property="sex"/>
+            <result column="address" property="address"/>
+        </association>
+    </resultMap>
+
+    <!-- 订单及订单明细的resultMap
+使用extends继承，不用在中配置订单信息和用户信息的映射
+ -->
+    <resultMap type="Orders" id="OrdersAndOrderDetailResultMap">
+        <id column="id" property="id"/>
+        <result column="user_id" property="userId"/>
+        <result column="number" property="number"/>
+        <result column="createtime" property="createtime"/>
+        <result column="note" property="note"/>
+
+        <!-- 订单明细信息
+        一个订单关联查询出了多条明细，要使用collection进行映射
+        collection：对关联查询到多条记录映射到集合对象中
+        property：将关联查询到多条记录映射到com.iot.mybatis.po.Orders哪个属性
+        ofType：指定映射到list集合属性中pojo的类型
+         -->
+        <collection property="orderDetails" ofType="Orderdetail">
+            <!-- id：订单明细唯 一标识
+            property:要将订单明细的唯 一标识 映射到com.iot.mybatis.po.Orderdetail的哪个属性
+              -->
+            <id column="orderdetail_id" property="id"/>
+            <result column="items_id" property="itemsId"/>
+            <result column="items_num" property="itemsNum"/>
+            <result column="orders_id" property="ordersId"/>
+        </collection>
+
+    </resultMap>
+
+    <!-- 一对一 查询订单关联查询用户信息 -->
+    <select id="findOrdersUser"  resultType="OrdersCustom">
+<!--    <select id="findOrdersUser"  resultMap="OrdersUserResultMap">-->
+        SELECT
+        orders.*,
+        user.username,
+        user.sex,
+        user.address
+        FROM
+        orders,
+        user
+        WHERE orders.user_id = user.id
+    </select>
+
+
+    <!-- 一对多 查询订单关联查询用户及订单明细，使用resultmap -->
+    <select id="findOrdersAndOrderDetailResultMap" resultMap="OrdersAndOrderDetailResultMap">
+        SELECT
+        orders.*,
+        orderdetail.id orderdetail_id,
+        orderdetail.items_id,
+        orderdetail.items_num,
+        orderdetail.orders_id
+        FROM
+        orders,
+        orderdetail
+        WHERE orderdetail.orders_id=orders.id
+    </select>
+</mapper>
+
+<!--
+            resultType和resultMap实现一对一查询小结
+
+            实现一对一查询：
+
+            resultType：使用resultType实现较为简单，如果pojo中没有包括查询出来的列名，需要增加列名对应的属性，即可完成映射。如果没有查询结果的特殊要求建议使用resultType。
+            resultMap：需要单独定义resultMap，实现有点麻烦，如果对查询结果有特殊的要求，使用resultMap可以完成将关联查询映射pojo的属性中。
+            resultMap可以实现延迟加载，resultType无法实现延迟加载。
+            -->
+
+<!--        mybatis使用resultMap的collection对关联查询的多条记录映射到一个list集合属性中。
+
+            使用resultType实现：将订单明细映射到orders中的orderdetails中，需要自己处理，使用双重循环遍历，去掉重复记录，将订单明细放在orderdetails中。-->

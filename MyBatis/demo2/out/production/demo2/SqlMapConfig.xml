@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <!-- 和spring整合后 environments配置将废除-->
+    <environments default="development">
+        <environment id="development">
+            <!-- 使用jdbc事务管理，事务控制由mybatis-->
+            <transactionManager type="JDBC" />
+            <!-- 数据库连接池,由mybatis管理-->
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.jdbc.Driver" />
+                <property name="url" value="jdbc:mysql://localhost:3306/test_mybatis?characterEncoding=utf-8" />
+                <property name="username" value="root" />
+                <property name="password" value="root" />
+            </dataSource>
+        </environment>
+    </environments>
+
+    <!-- 加载映射文件-->
+    <mappers>
+        <!--
+        写法一: 单个映射
+        <mapper resource="sqlmap/UserMapper.xml"/>-->
+        <!--
+        写法二: mapper代理映射
+            <mapper class="com.jason.demo.dao.UserMapper"/>
+            前提是：使用的是mapper代理方法 并且接口和映射文件在同一个目录下-->
+        <!--
+        写法三 推荐写法 包扫描-->
+        <package name="com.jason.demo.dao"/>
+    </mappers>
+
+</configuration>
