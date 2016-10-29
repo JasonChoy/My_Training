@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.jason.demo.domain">
+    <class name="Person" table="one_to_one_person">
+        <id name="id">
+            <!-- 采用foreign生成策略，forgeign会取得另外一个关联对象的标识 (native会自动匹配)-->
+            <generator class="native"></generator>
+        </id>
+        <property name="name"></property>
+
+        <!--方式一:主键关联（不推荐）
+            one-to-one指示hibernate如何加载其关联对象，默认根据主键加载
+            也就是拿到关系字段值，根据对端的主键来加载关联对象
+
+            constrained="true"表示约束，当前主键（person的主键）还是一个外键
+            参照了对端的主键（IdCard的主键），也就是会生成外键约束语句
+
+        <one-to-one name="idCard" class="IdCard" constrained="true"></one-to-one>
+        -->
+
+<!--     方式二:唯一外键关联
+         由于它是一对一的唯一外键关联，它是多对一关联的特例，注释可以直接写成多对一关联
+         idCard属性，表达的是本对象与IdCard的多对一关系。
+-->
+        <many-to-one name="idCard" class="IdCard" column="idCardId" unique="true"></many-to-one>
+
+    </class>
+</hibernate-mapping>

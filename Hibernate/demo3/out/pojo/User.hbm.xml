@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.jason.demo.domain">
+    <class name="User" table="many_to_one_user">
+        <id name="id">
+            <generator class="native"></generator>
+        </id>
+        <property name="name"></property>
+        <!-- group属性，表达的是本对象与Group的多对一的关系-->
+        <many-to-one name="group" class="Group" column="groupid"></many-to-one>
+        <!-- 解释：
+            多对一关系标签：
+            <many-to-one name=“” class=“” column=“”/>
+
+            1、第1个问号：group是User类的属性，对应于name属性名
+            2、第2个问号：class表达的是本对象(User)与Group的关系
+            3、第3个问号：column是属性名+Id
+            当我们写完注释之后，我们直接拷贝问号的对应关系即可。
+         -->
+    </class>
+</hibernate-mapping>
+
+
+<!--        主键生成策略
+        increment 从1开始自增
+        UUID      使用128位UUID算法生成主键
+        sequence  (MySQL/SQlServer不支持)
+        identity  根据底层数据库，来支持自动增长，不同的数据库用不同的主键增长方式。
+        native    根据数据库的类型,自动在sequence 、identity和,hilo进行切换。
+
+        UUID，increment、Hilo、assigned：对数据库无依赖
+        identity：依赖Mysql或sql server，主键值不由hibernate维护
+        sequence：适合于oracle等支持序列的dbms，主键值不由hibernate维护，由序列产生。
+        native：根据底层数据库的具体特性选择适合的主键生成策略，如果是mysql或sqlserver，选择identity，如果是oracle，选择sequence。-->
