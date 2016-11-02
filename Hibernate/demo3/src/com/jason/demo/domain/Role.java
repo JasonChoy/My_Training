@@ -1,9 +1,9 @@
 package com.jason.demo.domain;
 
 /**
- * Created by cjs on 2016/10/28.
+ * Created by cjs on 2016/11/2.
  */
-public class Group {
+public class Role {
     private int id;
     private String name;
 
@@ -21,13 +21,5 @@ public class Group {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    @Override
-    public String toString() {
-        return "Group{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                '}';
     }
 }

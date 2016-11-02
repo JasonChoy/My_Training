@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.jason.demo.domain">
+    <class name="ClassesDouble" table="one_to_many_double_classes">
+        <id name="id">
+            <generator class="native"></generator>
+        </id>
+        <property name="name"></property>
+
+        <!--  采用set集合
+        <set name="students">
+            <key column="students"></key>
+            <one-to-many class="Student"></one-to-many>
+        </set>
+        -->
+        <!--采用list集合-->
+        <list name="students" inverse="true">   <!-- 影响控制反转：inverse="false",多的一端维护关系，让一的一端失效 -->
+            <key column="classesid"></key>
+            <!--list 为有序的。因此需要一个索引列 <list-index column="HOMEWORK_IDX"/>-->
+            <list-index column="HOMEWORK_IDX"/>
+            <one-to-many class="StudentDouble"></one-to-many>
+        </list>
+
+    </class>
+</hibernate-mapping>
+
+<!--
+        inverse属性：
+        inverse属性可以用在一对多和多对多双向关联上，inverse属性默认为false，为false表示本端维护关系，如果inverse为true，则本端不能维护关系，会交给另一端维护关系，本端失效。所以一对多关联映射我们通常在多的一端维护关系，让一的一端失效，所以设置为inverse为true。
+        注意：inverse属性，只影响数据的存储，也就是持久化。
+-->

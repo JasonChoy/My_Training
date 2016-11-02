@@ -17,10 +17,24 @@
         <!--自动建表-->
         <property name="hbm2ddl.auto">update</property>
         <!-- 扫描映射文件 -->
+        <!--多对一-->
         <mapping resource="pojo/User.hbm.xml"></mapping>
         <mapping resource="pojo/Group.hbm.xml"></mapping>
+        <!--单向一对一-->
         <mapping resource="pojo/Person.hbm.xml"></mapping>
         <mapping resource="pojo/IdCard.hbm.xml"></mapping>
+        <!--双向一对一-->
+        <mapping resource="pojo/PersonDouble.hbm.xml"></mapping>
+        <mapping resource="pojo/IdCardDouble.hbm.xml"></mapping>
+        <!--单向一对多-->
+        <mapping resource="pojo/Classes.hbm.xml"></mapping>
+        <mapping resource="pojo/Student.hbm.xml"></mapping>
+        <!--双向一对多-->
+        <mapping resource="pojo/ClassesDouble.hbm.xml"></mapping>
+        <mapping resource="pojo/StudentDouble.hbm.xml"></mapping>
+        <!-- 多对多-->
+        <mapping resource="pojo/People.hbm.xml"></mapping>
+        <mapping resource="pojo/Role.hbm.xml"></mapping>
 
     </session-factory>
 </hibernate-configuration>  

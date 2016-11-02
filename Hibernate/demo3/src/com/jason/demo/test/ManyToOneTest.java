@@ -2,9 +2,11 @@ package com.jason.demo.test;
 
 import com.jason.demo.domain.Group;
 import com.jason.demo.domain.User;
+import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
+import org.hibernate.criterion.Restrictions;
 import org.hibernate.tool.hbm2ddl.SchemaExport;
 import org.junit.Test;
 
@@ -74,5 +76,29 @@ public class ManyToOneTest {
                 }
             }
         }
+    }
+
+    @Test
+    public void selectTest(){                       //多对一：多端维护一端的关系，在加载多端时，可以将一端加载上来。
+        String resource = "hibernate.cfg.xml";
+        //读取hibernate.cfg.xml文件
+        Configuration cfg = new Configuration().configure(resource);
+
+        //建立SessionFactory
+        SessionFactory factory =cfg.buildSessionFactory();
+
+        //取得session
+        Session session = null;
+
+        //开启session
+        session = factory.openSession();
+
+        Criteria criteria = session.createCriteria(User.class);
+        criteria.add(Restrictions.eq("id",4));
+        User user = (User) criteria.uniqueResult();
+        Group group = user.getGroup();
+        System.out.println(group);
+
+        session.close();
     }
 }

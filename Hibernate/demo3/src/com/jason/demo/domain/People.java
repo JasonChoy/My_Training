@@ -1,11 +1,14 @@
 package com.jason.demo.domain;
 
+import java.util.Set;
+
 /**
- * Created by cjs on 2016/10/28.
+ * Created by cjs on 2016/11/2.
  */
-public class Group {
+public class People {
     private int id;
     private String name;
+    private Set<Role> roles;
 
     public int getId() {
         return id;
@@ -23,11 +26,11 @@ public class Group {
         this.name = name;
     }
 
-    @Override
-    public String toString() {
-        return "Group{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                '}';
+    public Set<Role> getRoles() {
+        return roles;
+    }
+
+    public void setRoles(Set<Role> roles) {
+        this.roles = roles;
     }
 }

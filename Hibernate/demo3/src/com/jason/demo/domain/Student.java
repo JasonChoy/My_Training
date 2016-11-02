@@ -1,17 +1,17 @@
 package com.jason.demo.domain;
 
 /**
- * Created by cjs on 2016/10/28.
+ * Created by cjs on 2016/11/1.
  */
-public class Group {
-    private int id;
+public class Student {
+    private  Integer id;
     private String name;
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -25,7 +25,7 @@ public class Group {
 
     @Override
     public String toString() {
-        return "Group{" +
+        return "Student{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 '}';
