@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.jason.demo.domain">
+    <class name="Classes" table="one_to_many_classes">
+        <id name="id">
+            <generator class="native"></generator>
+        </id>
+        <property name="name"></property>
+
+        <!--  采用set集合
+        <set name="students">
+            <key column="students"></key>
+            <one-to-many class="Student"></one-to-many>
+        </set>
+        -->
+        <!--采用list集合-->
+        <list name="students">
+            <key column="students"></key>
+            <!--list 为有序的。因此需要一个索引列 <list-index column="HOMEWORK_IDX"/>-->
+            <list-index column="HOMEWORK_IDX"/>
+            <one-to-many class="Student"></one-to-many>
+        </list>
+
+    </class>
+</hibernate-mapping>
