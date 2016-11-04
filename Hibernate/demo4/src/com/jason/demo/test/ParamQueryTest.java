@@ -8,6 +8,7 @@ import org.hibernate.cfg.Configuration;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -50,4 +51,18 @@ public class ParamQueryTest {
         session.close();
     }
 
+    /*聚合查询*/
+    @Test
+    public void paramQueryTest3(){
+        session.beginTransaction();
+        //可以采用 ：参数名 的方式传递参数
+        Query query = session.createQuery("select c.name,count(s) from ClassesDouble c left join c.students s group by c.name order by c.name");
+        List list = query.list();
+        for(Iterator ite = list.iterator(); ite.hasNext();){
+            Object[] obj=(Object[])ite.next();
+            System.out.println(obj[0]+","+obj[1]);
+        }
+        session.getTransaction().commit();
+        session.close();
+    }
 }

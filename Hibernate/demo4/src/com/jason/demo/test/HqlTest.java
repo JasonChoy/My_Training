@@ -45,7 +45,7 @@ public class HqlTest {
         }
 
         Query query1 = session.createQuery("select count(*) from User");
-        Object num  = query1.uniqueResult();
+        Long num  = (Long) query1.uniqueResult();
         System.out.println(num);
 
         session.close();
