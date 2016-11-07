@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.jason.demo.domain">
+    <!--生成默认为user的数据库表-->
+    <class name="PessimismLockInventory" table="pessimism_lock_inventory">
+        <id name="itemNo">
+            <generator class="assigned"/>
+        </id>
+        <property name="itemName" type="string"/>
+        <property name="quantity" type="integer"/>
+    </class>
+</hibernate-mapping>
