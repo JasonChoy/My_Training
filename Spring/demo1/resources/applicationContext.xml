@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+           http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd
+           http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd">
+
+    <!-- id是唯一性标识，不能重-->
+    <!--  相当于工厂一样-->
+    <bean id="userDao4Mysql"  class="com.jason.demo.dao.impl.UserImplDao"></bean>
+    <!--<bean id="userDao4Oracle"  class="com.liang.spring.dao.UserDao4OracleImpl"></bean>-->
+    <!-- userService使用userDao接口，userDao使用构造函数将依赖关系给userService-->
+    <!-- userManager依赖哪写dao，IoC容器不仅是一个工厂，它提供了管理依赖的能力。
+     -->
+    <bean id="userManager" class="com.jason.demo.service.impl.UserImplService">
+        <!--构造器注入-->
+        <!--<constructor-arg ref="userDao4Mysql"></constructor-arg>-->
+        <!--setter注入-->
+        <property name="userDao" ref="userDao4Mysql"></property>
+    </bean>
+</beans>
