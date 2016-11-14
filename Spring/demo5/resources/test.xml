@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<beans>
+
+    <bean id="dao" class="com.jason.demo.dao.impl.Dao4MySqlImpl" />
+
+    <bean id="service" class="com.jason.demo.service.impl.TestImplService" />
+
+</beans>-->
+
+<beans>
+
+    <bean id="dao" class="com.jason.demo.dao.impl.Dao4MySqlImpl" />
+
+    <bean id="service" class="com.jason.demo.service.impl.TestImplService">
+        <property name="dao" ref="dao"></property>
+    </bean>
+
+</beans>
