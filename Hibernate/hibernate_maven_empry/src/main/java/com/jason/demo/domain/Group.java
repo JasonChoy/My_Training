@@ -1,30 +1,25 @@
 package com.jason.demo.domain;
 
 import javax.persistence.*;
-import java.util.List;
 
 /**
- * Created by cjs on 2016/11/1.
+ * Created by cjs on 2016/10/28.
  */
 @Entity
-@Table(name="one_to_many_classes")
-public class Classes {
+@Table(name="many_to_one_group")
+public class Group {
     @Id //主键
     @GeneratedValue(strategy= GenerationType.AUTO)//采用数据库自增方式生成主键
     @Column
-    private Integer id;
+    private int id;
     @Column
     private String name;
 
-    @OneToMany
-    @JoinColumn(name="classesId")
-    private List<Student> students;
-
-    public Integer getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -36,20 +31,11 @@ public class Classes {
         this.name = name;
     }
 
-    public List<Student> getStudents() {
-        return students;
-    }
-
-    public void setStudents(List<Student> students) {
-        this.students = students;
-    }
-
     @Override
     public String toString() {
-        return "Classes{" +
+        return "Group{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", students=" + students +
                 '}';
     }
 }

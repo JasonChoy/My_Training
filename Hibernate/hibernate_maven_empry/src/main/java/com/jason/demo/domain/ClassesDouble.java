@@ -7,8 +7,8 @@ import java.util.List;
  * Created by cjs on 2016/11/1.
  */
 @Entity
-@Table(name="one_to_many_classes")
-public class Classes {
+@Table(name="one_to_many_double_classes")
+public class ClassesDouble {
     @Id //主键
     @GeneratedValue(strategy= GenerationType.AUTO)//采用数据库自增方式生成主键
     @Column
@@ -16,9 +16,13 @@ public class Classes {
     @Column
     private String name;
 
-    @OneToMany
-    @JoinColumn(name="classesId")
-    private List<Student> students;
+    //添加mappedBy属性，否则将创建中间表
+/*  @OneToMany(cascade = CascadeType.PERSIST,targetEntity = StudentDouble.class,mappedBy = "classes")
+    @OrderBy("id")
+    值得注意的是，以StudentDouble作为外键的表会自动生成一个对应的字段并以@OrderBy内值自动创建，
+    mappedBy属性内容为目标实体的对应关联字段，如果没有该属性，hibernate会自动创建StudentDouble和ClassesDouble的一个中间表。*/
+    @OneToMany(mappedBy = "classes")
+    private List<StudentDouble> students;
 
     public Integer getId() {
         return id;
@@ -36,11 +40,11 @@ public class Classes {
         this.name = name;
     }
 
-    public List<Student> getStudents() {
+    public List<StudentDouble> getStudents() {
         return students;
     }
 
-    public void setStudents(List<Student> students) {
+    public void setStudents(List<StudentDouble> students) {
         this.students = students;
     }
 
@@ -49,7 +53,6 @@ public class Classes {
         return "Classes{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", students=" + students +
                 '}';
     }
 }
