@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <!-- 驱动 -->
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <!-- 数据库URL -->
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/test_hibernate2</property>
+        <!-- 数据库用户名 -->
+        <property name="hibernate.connection.username">root</property>
+        <!-- 数据库密码 -->
+        <property name="hibernate.connection.password">root</property>
+        <!-- mysql的方言 -->
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <!--自动建表-->
+        <property name="hbm2ddl.auto">update</property>
+
+        <!-- 由原来的映射文件<mapping resource="com/liang/hibernate/User.hbm.xml"/> ，改成实体类 -->
+        <!--单向一对多-->
+        <mapping class="com.jason.demo.domain.Classes"/>
+        <mapping class="com.jason.demo.domain.Student"/>
+        <!--双向一对多-->
+        <mapping class="com.jason.demo.domain.ClassesDouble"/>
+        <mapping class="com.jason.demo.domain.StudentDouble"/>
+        <!--多对一-->
+        <mapping class="com.jason.demo.domain.User"/>
+        <mapping class="com.jason.demo.domain.Group"/>
+        <!--单向一对一-->
+        <mapping class="com.jason.demo.domain.IdCard"/>
+        <mapping class="com.jason.demo.domain.Person"/>
+        <!--双向一对一-->
+        <mapping class="com.jason.demo.domain.IdCardDouble"/>
+        <mapping class="com.jason.demo.domain.PersonDouble"/>
+        <!--单向多对多-->
+        <mapping class="com.jason.demo.domain.People"/>
+        <mapping class="com.jason.demo.domain.Role"/>
+        <!--双向多对多-->
+        <mapping class="com.jason.demo.domain.PeopleDouble"/>
+        <mapping class="com.jason.demo.domain.RoleDouble"/>
+    </session-factory>
+</hibernate-configuration>
