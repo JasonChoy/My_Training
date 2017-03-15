@@ -15,9 +15,7 @@ public class User {
     private int id;
     @Column
     private String name;
-    //一个用户 对应 一个组     一个组 对应 多个用户
-    @ManyToOne
-    private Group group;
+
 
     public int getId() {
         return id;
@@ -31,10 +29,12 @@ public class User {
     public void setName(String name) {
         this.name = name;
     }
-    public Group getGroup() {
-        return group;
-    }
-    public void setGroup(Group group) {
-        this.group = group;
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                '}';
     }
 }
