@@ -2,14 +2,15 @@ package com.jason.demo.action;
 
 import com.jason.demo.domain.User;
 import com.opensymphony.xwork2.ActionSupport;
+import com.opensymphony.xwork2.ModelDriven;
 
 /**
  * Created by cjs on 2017/3/22.
  */
-public class MyStrutsAction extends ActionSupport{
+public class MyStrutsAction extends ActionSupport implements ModelDriven<User>{
     //属性驱动
    private String mark;
-    //模型驱动
+    //模型驱动(实现ModelDriven接口)
     private User user;
 
     public String getMark() {
@@ -20,12 +21,9 @@ public class MyStrutsAction extends ActionSupport{
         this.mark = mark;
     }
 
-    public User getUser() {
+    @Override
+    public User getModel() {
         return user;
-    }
-
-    public void setUser(User user) {
-        this.user = user;
     }
 
     public String index() throws Exception {
@@ -44,4 +42,6 @@ public class MyStrutsAction extends ActionSupport{
             return "success";
         }
     }
+
+
 }
