@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+
+<struts>
+    <!--开发模式-->
+    <constant name="struts.devMode" value="true"/>
+
+    <package name="struts2" namespace="/" extends="struts-default">
+        <action name="*_*" class="com.jason.demo.action.{1}Action" method="{2}">
+            <result name="{2}">/WEB-INF/jsp/{2}.jsp</result>
+            <result name="listchian" type="chain">User_list</result>
+        </action>
+    </package>
+</struts>
+
+
+<!--
+        Struts2支持的不同类型的返回结果为：
+        Chain Result&ndash;&gt;type="chain"用来处理Action链
+        Dispatcher Result &ndash;&gt;type="dispatcher"用来转向页面，通常处理JSPFreeMarker
+        Result &ndash;&gt;type="freemarker"处理FreeMarker模板HttpHeader
+        Result &ndash;&gt;type="httpheader"用来控制特殊的Http行为Redirect
+        Result &ndash;&gt;type="redirect"重定向到一个URLRedirect Action
+        Result &ndash;&gt;type="redirectAction"重定向到一个ActionStream
+        Result &ndash;&gt;type="stream"向浏览器发送InputSream对象，通常用来处理文件下载Velocity
+        Result &ndash;&gt;type="velocity"处理Velocity模板XLST Result &ndash;&gt;type="xslt"处理XML/XLST模板PlainText
+        Result &ndash;&gt;type="plainText"显示原始文件内容，例如文件源代码另外第三方的result类型还包括JasperReports Plugin，专门用来处理JasperReport类型的报表输出。-->
