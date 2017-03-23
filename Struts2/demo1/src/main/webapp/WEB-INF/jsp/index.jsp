@@ -1,6 +1,6 @@
 <%--
   Created by IntelliJ IDEA.
-  User: Administrator
+  User: cjs
   Date: 2017/3/22
   Time: 20:55
   To change this template use File | Settings | File Templates.
@@ -12,8 +12,19 @@
 </head>
 <body>
 <form action="/login">
-    用户名:<input name="user.userName"/>
-    年龄:<input name="user.age" type="number"/>
+    <table>
+        <tr>
+            <td>用户名:</td>
+            <td><input name="user.userName"/></td>
+        </tr>
+        <tr>
+            <td>年龄:</td>
+            <td><input name="user.age" type="number"/></td>
+        <tr>
+            <td>备注:</td>
+            <td><textarea name="mark" style="height: 190px;"></textarea></td>
+        </tr>
+    </table>
     <input type="submit"/>
 </form>
 

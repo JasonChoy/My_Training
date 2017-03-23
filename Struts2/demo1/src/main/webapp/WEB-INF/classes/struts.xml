@@ -5,12 +5,20 @@
 
 
 <struts>
-    <!--指定constant的name为devMode表示处于开发模式，value=true修改配置文件内容自动热替换而不需要每次重新发布-->
+
+
+    <!-- （可以不配置 默认是*）修改struts2访问链接的后缀名，改成.do的形式  -->
+    <constant name="struts.action.extension" value="do"></constant>
+
+    <!-- （可以不配置 默认是fasle）指定constant的name为devMode表示处于开发模式，value=true修改配置文件内容自动热替换而不需要每次重新发布-->
     <constant name="struts.devMode" value="true"/>
+
     <!-- 所有的Action定义都应该放在package下,Struts2中通过package来管理action,这里的包名name并不对应java类中的包 -->
     <package name="struts2" extends="struts-default">
+        <!--这里若不指定method ，则默认执行ActionSupport的execution方法-->
         <action name="index" class="com.jason.demo.action.MyStrutsAction" method="index">
             <result name="index">/WEB-INF/jsp/index.jsp</result>
+            <result name="hello">/WEB-INF/jsp/hello.jsp</result>
         </action>
         <action name="login" class="com.jason.demo.action.MyStrutsAction" method="login">
             <result name="success">/WEB-INF/jsp/success.jsp</result>
