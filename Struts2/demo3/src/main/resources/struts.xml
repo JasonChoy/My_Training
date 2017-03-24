@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <!-- 声明常量（开发模式） -->
+    <constant name="struts.devMode" value="true"></constant>
+    <!-- 声明常量（在Struts的配置文件修改后，自动加载） -->
+    <constant name="struts.configuration.xml.reload" value="true"></constant>
+    <!-- 声明包 -->
+    <package name="myPackage" extends="struts-default" namespace="/">
+        <!-- 定义action -->
+        <action name="userAction" class="com.jason.demo.action.UserAction">
+            <!-- 用户登录页面 -->
+            <result name="input">login.jsp</result>
+            <!-- 登录成功的返回页面 -->
+            <result>success.jsp</result>
+        </action>
+    </package>
+</struts>
+
