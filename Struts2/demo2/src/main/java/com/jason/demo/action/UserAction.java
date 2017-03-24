@@ -39,6 +39,14 @@ public class UserAction extends ActionSupport implements ModelDriven<User> {
         this.id = id;
     }
 
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
     @Override
     public User getModel() {
         return user;
@@ -65,11 +73,4 @@ public class UserAction extends ActionSupport implements ModelDriven<User> {
         return "listchian";
     }
 
-    @Override
-    public void validate() {
-        if(user!=null && (user.getUserName() ==null || user.getUserName().trim().length() == 0)){
-            this.addFieldError("userNameFieldError","用户名不能为空");
-        }
-        super.validate();
-    }
 }

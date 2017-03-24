@@ -14,9 +14,9 @@
 <body>
 <s:debug></s:debug>
     <form action="/User_update">
-        id:<input name="user.id" value="${user.id}"/><br/>
-        用户名:<input name="user.userName" value="${user.userName}"/><s:fielderror fieldName="userNameFieldError"/><br/>
-        年龄:<input name="user.age" value="${user.age}"/><br/>
+        id:<input name="user.id" value="${model.id}"/><br/>
+        用户名:<input name="user.userName" value="${model.userName}"/><br/>
+        年龄:<input name="user.age" value="${model.age}"/><br/>
         <input type="submit">
     </form>
 </body>
