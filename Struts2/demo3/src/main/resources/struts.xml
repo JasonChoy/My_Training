@@ -3,18 +3,35 @@
         "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
         "http://struts.apache.org/dtds/struts-2.3.dtd">
 <struts>
-    <!-- 声明常量（开发模式） -->
+<!--    &lt;!&ndash; 声明常量（开发模式） &ndash;&gt;
     <constant name="struts.devMode" value="true"></constant>
-    <!-- 声明常量（在Struts的配置文件修改后，自动加载） -->
+    &lt;!&ndash; 声明常量（在Struts的配置文件修改后，自动加载） &ndash;&gt;
     <constant name="struts.configuration.xml.reload" value="true"></constant>
-    <!-- 声明包 -->
+    &lt;!&ndash; 声明包 &ndash;&gt;
     <package name="myPackage" extends="struts-default" namespace="/">
-        <!-- 定义action -->
-        <action name="userAction" class="com.jason.demo.action.UserAction">
-            <!-- 用户登录页面 -->
-            <result name="input">login.jsp</result>
-            <!-- 登录成功的返回页面 -->
-            <result>success.jsp</result>
+        &lt;!&ndash; 定义action &ndash;&gt;
+        <action name="*" class="com.jason.demo.action.UserAction" method="{1}">
+            &lt;!&ndash; 用户登录页面 &ndash;&gt;
+            <result name="login">WEB-INF/jsp/login.jsp</result>
+            &lt;!&ndash; 登录成功的返回页面 &ndash;&gt;
+            <result>WEB-INF/jsp/success.jsp</result>
+            <result name="input"></result>
+
+        </action>
+    </package>-->
+
+    <constant name="struts.enable.DynamicMethodInvocation" value="false" />
+
+    <package name="struts2" extends="struts-default">
+        <!--这一个<action>主要针对整个action对象-->
+        <action name="register" class="com.jason.demo.action.RegisterAction">
+            <result name="success">/show.jsp</result>
+            <result name="input"> /register.jsp</result>
+        </action>
+        <!--这个<action>主要针对action的某一个方法 (采用了通配符 * 与 {1} 的值是相同的)-->
+        <action name="register_*" class="com.jason.demo.action.RegisterAction" method="{1}">
+            <result name="success">/show.jsp</result>
+            <result name="input"> /register.jsp</result>
         </action>
     </package>
 </struts>

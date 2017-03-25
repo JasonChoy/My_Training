@@ -24,4 +24,16 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
+    <!--    解决idea的meaven工程 src下xml等资源文件无法发布到编译后的目录里的问题-->
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                </includes>
+            </resource>
+        </resources>
+    </build>
 </project>

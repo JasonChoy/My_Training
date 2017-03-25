@@ -3,19 +3,15 @@
         "http://struts.apache.org/dtds/xwork-validator-1.0.2.dtd">
 
 <validators>
-    <field name="username">
+    <field name="users">
         <field-validator type="requiredstring">
-            <message>用户名不能为空</message>
+            <message>users should be not blank!</message>
         </field-validator>
-    </field>
-    <field name="password">
-        <field-validator type="requiredstring">
-            <message>密码不能为空</message>
-        </field-validator>
+
         <field-validator type="stringlength">
+            <param name="minLength">6</param>
             <param name="maxLength">10</param>
-            <param name="minLength">5</param>
-            <message>密码长度应该在${minLength}--${maxLength}位之间</message>
+            <message>users should be between ${minLength} and ${maxLength}</message>
         </field-validator>
     </field>
 </validators>
