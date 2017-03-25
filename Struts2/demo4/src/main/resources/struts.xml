@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+
+<struts>
+    <!--开发模式-->
+    <constant name="struts.devMode" value="true"/>
+
+    <package name="struts2" namespace="/" extends="struts-default">
+        <interceptors>
+            <!--全局拦截-->
+            <interceptor name="userIt" class="com.jason.demo.iterceptor.UserInterceptor"/>
+            <!--拦截指定方法-->
+            <interceptor name="userMe" class="com.jason.demo.iterceptor.UserMethodInterceptor">
+                <param name="includeMethods">login</param>
+            </interceptor>
+
+            <interceptor-stack name="mystack">
+                <interceptor-ref name="userIt"/>
+                <interceptor-ref name="userMe"/>
+                <interceptor-ref name="defaultStack"/>
+            </interceptor-stack>
+        </interceptors>
+
+        <default-interceptor-ref name="mystack"/>
+
+        <action name="*" class="com.jason.demo.action.UserAction" method="{1}">
+            <result name="index">index.jsp</result>
+            <result>/WEB-INF/jsp/success.jsp</result>
+<!--            <interceptor-ref name="userMe">
+                <param name="includeMethods">login</param>
+            </interceptor-ref>-->
+        </action>
+
+    </package>
+
+</struts>
