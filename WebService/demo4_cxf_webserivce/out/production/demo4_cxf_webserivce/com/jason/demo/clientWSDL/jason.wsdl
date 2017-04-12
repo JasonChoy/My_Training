@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?><wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://impl.service.demo.jason.com/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns2="http://schemas.xmlsoap.org/soap/http" xmlns:ns1="http://service.demo.jason.com/" name="JasonCaiHello" targetNamespace="http://impl.service.demo.jason.com/">
+  <wsdl:import location="http://localhost:8080/jason?wsdl=IHelloService.wsdl" namespace="http://service.demo.jason.com/">
+    </wsdl:import>
+  <wsdl:binding name="JasonCaiHelloSoapBinding" type="ns1:IHelloService">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="bye">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="bye">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="byeResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="hello">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="hello">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="helloResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="login">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="login">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="loginResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="JasonCaiHello">
+    <wsdl:port binding="tns:JasonCaiHelloSoapBinding" name="HelloServiceImplPort">
+      <soap:address location="http://localhost:8080/jason"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
