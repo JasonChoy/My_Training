@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="GBK"?>
+<!DOCTYPE validators PUBLIC "-//Apache Struts//XWork Validator 1.0.2//EN"
+        "http://struts.apache.org/dtds/xwork-validator-1.0.2.dtd">
+
+<validators>
+
+    <field name="username"> <!--指明是对哪一个属性进行验证-->
+        <field-validator type="requiredstring"> <!--验证的类型-->
+            <param name="trim">true</param>
+            <message>username should be notblank!</message>
+            <!--如果错误显示给客户端的信息-->
+        </field-validator>
+        <field-validator type="stringlength">
+            <param name="minLength">6</param>
+            <param name="maxLength">10</param>
+            <message>username should be not between${minLength} and ${maxLength}</message>
+        </field-validator>
+    </field>
+
+    <field name="age">
+        <field-validator type="required">
+            <message>age should be not blank!</message>
+        </field-validator>
+
+        <field-validator type="int">
+            <param name="min">1</param>
+            <param name="max">150</param>
+            <message>age should be between ${min} and ${max}</message>
+        </field-validator>
+    </field>
+
+    <field name="birthday">
+        <field-validator type="required">
+            <message>birthday should be not blank!</message>
+        </field-validator>
+
+        <field-validator type="date">
+            <param name="min">1990-10-10</param>
+            <param name="max">2011-3-14</param>
+            <message>birthday should be between ${min} and ${max} </message>
+        </field-validator>
+    </field>
+</validators>
