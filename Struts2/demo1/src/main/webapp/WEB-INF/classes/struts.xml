@@ -13,12 +13,22 @@
     <!-- （可以不配置 默认是fasle）指定constant的name为devMode表示处于开发模式，value=true修改配置文件内容自动热替换而不需要每次重新发布-->
     <constant name="struts.devMode" value="true"/>
 
-    <!-- 所有的Action定义都应该放在package下,Struts2中通过package来管理action,这里的包名name并不对应java类中的包 -->
-    <package name="struts2" extends="struts-default">
-        <!--这里若不指定method ，则默认执行ActionSupport的execution方法-->
+    <!-- 所有的Action定义都应该放在package下,Struts2中通过package来管理action,这里的包名name并不对应java类中的包
+    <package> 作用:是用于声明一个包。用于管理action。
+        1.name 它用于声明一个包名，包名不能重复，也就是它是唯一的。
+        2.namespace 它与action标签的name属性合并确定了一个唯一访问action的路径。
+        3.extends 它代表继承的包名。
+        4.abstrace 它可以取值为true/false,如果为true,代表这个包是用于被继承的。
+    -->
+    <package name="struts2" namespace="/" extends="struts-default">
+        <!--这里若不指定method ，则默认执行ActionSupport的execution方法
+        <action> 用于声明一个action
+        1.name 就是action的一个名称，它是唯一的(在同包内) 它与package中的namespace确定了访问action的路径。
+        2.class Action类的全名
+        3.method 要访问的Action类中的方法的名称,方法无参数 ，返回值为String.如果不写，默认跳转到execute函数。
+        -->
         <action name="index" class="com.jason.demo.action.MyStrutsAction" method="index">
             <result name="index">/WEB-INF/jsp/index.jsp</result>
-            <result name="hello">/WEB-INF/jsp/hello.jsp</result>
         </action>
         <action name="login" class="com.jason.demo.action.MyStrutsAction" method="login">
             <result name="success">/WEB-INF/jsp/success.jsp</result>
@@ -26,3 +36,11 @@
         </action>
     </package>
 </struts>
+
+
+<!--
+<package namespace="默认值"> namespace的默认值是
+<action class="默认值"  method="默认值">
+    class的默认值是 ： com.opensymphony.xwork2.ActionSupport
+    method的默认值是 ： execute
+    <result name="默认值"> name的默认值是 “success”-->
