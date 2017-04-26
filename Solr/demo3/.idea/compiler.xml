@@ -22,13 +22,15 @@
         <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="solr-startup" />
-        <module name="solr-startup-maven" />
+        <module name="demo1" />
+        <module name="demo2" />
+        <module name="demo3" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="solr-startup" target="1.5" />
-      <module name="solr-startup-maven" target="1.5" />
+      <module name="demo1" target="1.5" />
+      <module name="demo2" target="1.5" />
+      <module name="demo3" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

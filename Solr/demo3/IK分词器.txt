@@ -1,0 +1,16 @@
+配置IKAnalyzer分词器的扩展词典，停止词词典
+
+1. 将 文件夹下的IKAnalyzer.cfg.xml , ext.dic和stopword.dic 三个文件 复制到/webapps/solr/WEB-INF/classes 目录下，并修改IKAnalyzer.cfg.xml
+        <?xml version="1.0" encoding="UTF-8"?>
+　　　　<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+　　　　<properties>
+   　　　　 <comment>IK Analyzer 扩展配置</comment>
+   　　　　 <!--用户可以在这里配置自己的扩展字典 -->
+    　　　　<entry key="ext_dict">ext.dic;</entry>
+
+   　　　　 <!--用户可以在这里配置自己的扩展停止词字典-->
+    　　　　<entry key="ext_stopwords">stopword.dic;</entry>
+　　　　</properties>
+
+
+这些扩展字典不添加也不会影响主功能

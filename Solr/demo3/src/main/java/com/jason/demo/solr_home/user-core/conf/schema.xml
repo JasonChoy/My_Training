@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+
+
+<schema name="user" version="1.2">
+    <types>
+        <fieldtype name="string" class="solr.StrField" sortMissingLast="true" omitNorms="true"/>
+        <fieldType name="int" class="solr.TrieIntField" precisionStep="0" omitNorms="true" positionIncrementGap="0"/>
+        <fieldType name="float" class="solr.TrieFloatField" precisionStep="0" omitNorms="true" positionIncrementGap="0"/>
+        <fieldType name="long" class="solr.TrieLongField" precisionStep="0" omitNorms="true" positionIncrementGap="0"/>
+        <fieldType name="double" class="solr.TrieDoubleField" precisionStep="0" omitNorms="true"  positionIncrementGap="0"/>
+        <fieldType name="date" class="solr.TrieDateField" omitNorms="true" precisionStep="0" positionIncrementGap="0"/>
+        <fieldType name="boolean" class="solr.BoolField" sortMissingLast="true" omitNorms="true"/>
+    </types>
+
+    <fields>
+        <field name="id" type="long" indexed="true" stored="true" required="true" multiValued="false" />
+        <field name="userName" type="string" indexed="true" stored="true" required="true" multiValued="false" />
+        <field name="loginPwd" type="string" indexed="true" stored="true" required="true" multiValued="false" />
+        <field name="email" type="string" indexed="true" stored="true" required="true" multiValued="false" />
+    </fields>
+    <!--设置id为唯一键-->
+    <uniqueKey>id</uniqueKey>
+</schema>
+
