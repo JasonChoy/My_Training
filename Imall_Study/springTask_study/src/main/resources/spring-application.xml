@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:task="http://www.springframework.org/schema/task"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-3.0.xsd"
+       default-autowire="byName" default-lazy-init="false">
+
+    <!--spring task定时器扫描-->
+    <context:component-scan base-package="com.jason.demo.timertask"/>
+
+    <!--扩展配置(可以不配置)
+    如果定时任务很多，可以配置executor线程池，这里executor的含义和java.util.concurrent.Executor是一样的，
+    pool-size的大小官方推荐为5~10。scheduler的pool-size是ScheduledExecutorService线程池，默认为1。-->
+    <task:executor id="executor" pool-size="5" />
+    <task:scheduler id="scheduler" pool-size="5" />
+    <task:annotation-driven executor="executor" scheduler="scheduler" />
+</beans>
