@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx" xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+           http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd
+           http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--扫描注入定时器-->
+    <context:component-scan base-package="com.jason.demo.quartz.*"/>
+
+    <!--配置quartz定时器的规则-->
+    <bean id="cronTask" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="targetObject">
+            <bean class="com.jason.demo.quartz.MyQuartzJob" />
+        </property>
+        <property name="targetMethod" value="runMyQuartzJob" />
+        <!-- false表示job不会并发执行，默认为true-->
+        <property name="concurrent" value="false" />
+    </bean>
+
+    <!--接下来配置触发器-->
+    <bean id="doWork" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+        <property name="jobDetail" ref="cronTask" />
+        <!--每5秒触发-->
+        <property name="cronExpression" value="0/5 * * * * ?" />
+    </bean>
+
+    <!--最后配置调度工厂-->
+    <bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+        <property name="triggers">
+            <list>
+                <ref local="doWork"/>
+            </list>
+        </property>
+    </bean>
+
+</beans>
