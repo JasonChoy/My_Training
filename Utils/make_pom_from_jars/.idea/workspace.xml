@@ -2,50 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="414f6294-4a08-4f0c-a40e-b892bf0a8e45" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jsoup_jsoup_1_8_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_0_b2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/make_pom_from_jars.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/bestway/MakePomFromJars.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/otherway/PomExtractor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/根据已有项目jar文件生成maven的pom.xml.txt" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../SpringMVC/springmvc-mybatis-maven/src/webapp/WEB-INF/classes/com/jasoncai/firstssm/dao/ItemsMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../SpringMVC/springmvc-mybatis-maven/src/webapp/WEB-INF/classes/com/jasoncai/firstssm/dao/ItemsMapperCustom.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../SpringMVC/springmvc-mybatis-maven/src/webapp/WEB-INF/classes/com/jasoncai/firstssm/dao/OrderdetailMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../SpringMVC/springmvc-mybatis-maven/src/webapp/WEB-INF/classes/com/jasoncai/firstssm/dao/OrdersMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../SpringMVC/springmvc-mybatis-maven/src/webapp/WEB-INF/classes/com/jasoncai/firstssm/dao/UserMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Struts2/demo1/src/main/webapp/WEB-INF/classes/com/jason/demo/action/MyStrutsAction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Struts2/demo1/src/main/webapp/WEB-INF/classes/com/jason/demo/domain/User.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Hibernate/demo2/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../Hibernate/demo2/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Hibernate/demo3/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../Hibernate/demo3/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../MyBatis/demo1/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../MyBatis/demo1/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../MyBatis/demo2/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../MyBatis/demo2/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../MyBatis/demo_withspring/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../MyBatis/demo_withspring/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Solr/solr-startup/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../Solr/solr-startup/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Spring/demo2/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../Spring/demo2/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Spring/spring_maven_empry/pom.xml" afterPath="$PROJECT_DIR$/../../Spring/spring_maven_empry/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Spring/spring_maven_empry/spring_maven_empry.iml" afterPath="$PROJECT_DIR$/../../Spring/spring_maven_empry/spring_maven_empry.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Spring/spring_maven_empry/src/main/java/com/jason/demo/controller/UserContoller.java" afterPath="$PROJECT_DIR$/../../Spring/spring_maven_empry/src/main/java/com/jason/demo/controller/UserContoller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Spring/spring_maven_empry/src/main/java/com/jason/demo/dao/UserDao.java" afterPath="$PROJECT_DIR$/../../Spring/spring_maven_empry/src/main/java/com/jason/demo/dao/UserDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Spring/spring_maven_empry/src/main/java/com/jason/demo/service/impl/UserImplService.java" afterPath="$PROJECT_DIR$/../../Spring/spring_maven_empry/src/main/java/com/jason/demo/service/impl/UserImplService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Spring/spring_maven_empry/src/main/resources/applicationContext.xml" afterPath="$PROJECT_DIR$/../../Spring/spring_maven_empry/src/main/resources/applicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpringMVC/springmvc-mybatis-maven/.idea/artifacts/springmvc_mybatis_maven_war_exploded.xml" afterPath="$PROJECT_DIR$/../../SpringMVC/springmvc-mybatis-maven/.idea/artifacts/springmvc_mybatis_maven_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpringMVC/springmvc-mybatis-maven/.idea/compiler.xml" afterPath="$PROJECT_DIR$/../../SpringMVC/springmvc-mybatis-maven/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpringMVC/springmvc-mybatis-maven/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../SpringMVC/springmvc-mybatis-maven/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpringMVC/springmvc-mybatis-maven/springmvc-mybatis-maven.iml" afterPath="$PROJECT_DIR$/../../SpringMVC/springmvc-mybatis-maven/springmvc-mybatis-maven.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpringMVC/springmvc-mybatis-maven2/.idea/compiler.xml" afterPath="$PROJECT_DIR$/../../SpringMVC/springmvc-mybatis-maven2/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpringMVC/springmvc-mybatis-maven2/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../SpringMVC/springmvc-mybatis-maven2/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Struts2/demo1/src/main/webapp/WEB-INF/classes/struts.xml" afterPath="$PROJECT_DIR$/../../Struts2/demo1/src/main/webapp/WEB-INF/classes/struts.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Struts2/demo2/demo2.iml" afterPath="$PROJECT_DIR$/../../Struts2/demo2/demo2.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/bestway/MakePomFromJars.java" afterPath="$PROJECT_DIR$/src/main/java/bestway/MakePomFromJars.java" />
     </list>
     <ignored path="make_pom_from_jars.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -75,7 +34,30 @@
     <favorites_list name="make_pom_from_jars" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="MakePomFromJars.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/bestway/MakePomFromJars.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="25" column="82" selection-start-line="25" selection-start-column="82" selection-end-line="25" selection-end-column="82" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.49070632">
+              <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -99,8 +81,8 @@
         <option value="$PROJECT_DIR$/src/main/java/MakePomFromJars.java" />
         <option value="$PROJECT_DIR$/src/main/java/oneway/MakePomFromJars.java" />
         <option value="$PROJECT_DIR$/src/main/java/otherway/PomExtractor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/bestway/MakePomFromJars.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/bestway/MakePomFromJars.java" />
       </list>
     </option>
   </component>
@@ -156,8 +138,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -293,6 +275,7 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1058" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager" selected="Application.MakePomFromJars">
     <configuration default="false" name="MakePomFromJars" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -716,6 +699,11 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -752,6 +740,7 @@
       <option name="number" value="Default" />
       <updated>1492785624290</updated>
       <workItem from="1492785627781" duration="8334000" />
+      <workItem from="1492832343013" duration="768000" />
     </task>
     <task id="LOCAL-00001" summary="201704221053">
       <created>1492829622454</created>
@@ -763,7 +752,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8334000" />
+    <option name="totallyTimeSpent" value="9102000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -776,31 +765,31 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1936" height="1056" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18656716" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18656716" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20895523" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17803837" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20895523" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27647716" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17803837" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -828,7 +817,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -837,6 +825,16 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
           <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/bestway/MakePomFromJars.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="82" selection-start-line="25" selection-start-column="82" selection-end-line="25" selection-end-column="82" />
+          <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
@@ -844,19 +842,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46075085">
+        <state vertical-scroll-proportion="0.49070632">
           <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bestway/MakePomFromJars.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.61290324">
-          <caret line="75" column="71" selection-start-line="75" selection-start-column="71" selection-end-line="75" selection-end-column="71" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

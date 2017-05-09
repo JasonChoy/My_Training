@@ -2,543 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2220f294-21d9-4cda-aa54-f544b4c05111" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/scripts/query.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/sxi.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/bug.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_calcite_calcite_core_1_11_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/main.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/receipt.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WEB-INF/web.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/status-busy.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__asm_asm_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/cloud.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/chosen.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/question-small-white.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_directory_api_api_util_1_0_0_M20.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/angular/controllers/files.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_continuation_9_3_14_v20161028.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_util_9_3_14_v20161028.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/chevron-small-expand.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/bin.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/scripts/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_xml_9_3_14_v20161028.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_acplt_oncrpc_1_0_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_pool_commons_pool_1_5_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/box.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/scripts/segments.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/cs.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/htm.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/script-code.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/arrow-circle.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_hydromatic_aggdesigner_algorithm_6_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/processor.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_directory_api_api_asn1_api_1_0_0_M20.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/gz.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_tree_5_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/drive-upload.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/odg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/angular/collections.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/threads.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/chosen-sprite-2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/angular-route.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_codecs_6_5_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/ui-radio-button.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/dot.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/gif.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cz_msebera_android_httpclient_4_4_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/angular/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/angular/cores.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/angular/controllers/stream.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xmlenc_xmlenc_0_52.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/cfm.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/vcf.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/documents-stack.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/document-import.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_common_2_7_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/magnifier.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/m.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_osgi_osgi_R4_core_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_deploy_9_3_14_v20161028.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/replication.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/angular/controllers/dataimport.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/terminal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_configuration_commons_configuration_1_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/node.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_jmx_9_3_14_v20161028.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_analyzers_phonetic_6_5_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/ram.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/receipt-invoice.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_hynnet_javax_servlet_api_3_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/styles/documents.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mortbay_jetty_jetty_util_6_1_26.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jcraft_jsch_0_1_42.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpmime_4_4_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/chosen-sprite.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/funnel.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_annotations_2_7_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/rb.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/toolbox.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/tick-circle.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/zip.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_commons_5_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/styles/java-properties.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/plugins.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/pencil.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_dropwizard_metrics_metrics_graphite_3_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/d3.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/lib/jquery.timeago.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_servlets_9_3_14_v20161028.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_directory_server_apacheds_i18n_2_0_0_M15.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/pencil-small.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/document-convert.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/cross.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/styles/dashboard.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/scripts/cores.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_noggit_noggit_0_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/lib/ZeroClipboard.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/mov.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_tdunning_t_digest_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/styles/menu.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/odp.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/eye.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/lua.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/partials/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_hydromatic_eigenbase_properties_1_1_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/network-status-offline.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/lib/order.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/question.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/hourglass--exclamation.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/rar.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/ui-check-box.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/scripts/documents.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_dropwizard_metrics_metrics_ganglia_3_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/angular/services.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_server_9_3_14_v20161028.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/minus-button.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/scripts/logging.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_server_1_9.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/class.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/styles/query.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/angular/threads.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jamesmurty_utils_java_xmlbuilder_0_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_analyzers_kuromoji_6_5_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/wma.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jline_jline_0_9_94.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_3_04.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/java.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/information.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/jar.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/highlight.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/solr-startup-maven.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/angular/files.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mortbay_jetty_jetty_6_1_26.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/cross-0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/battery.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/node-select.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/sxc.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_3_8_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/scripts/cloud.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/angular/controllers/cloud.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/angular.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ZeroClipboard.swf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_jaxrs_1_8_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_memory_6_5_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/analysis.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/cross-button.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/schema-browser.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/construction.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/scripts/java-properties.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/toggle-small-expand.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_2_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/block-small.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_webapp_9_3_14_v20161028.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/7z.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/chevron-small.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xerces_xercesImpl_2_9_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_woodstox_stax2_api_3_1_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_lucee_commons_fileupload_1_3_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/arrow-000-small.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/angular/dataimport.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/node-master.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/mpg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/scripts/replication.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/disk-black.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/angular/replication.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/tex.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/server.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_14_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/status.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/status-away.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/angular/controllers/documents.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/rm.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/database--plus.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/partials/documents.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/hand.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/angular/controllers/collection-overview.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/partials/schema.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/partials/logging.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/gear.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/jar.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/network-cloud.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/arrow-switch.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/chm.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/styles/logging.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__info_ganglia_gmetric4j_gmetric4j_1_0_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/information-small.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_2_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/partials/stream.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/angular/logging.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/inbox-document-text.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/styles/analysis.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/mail.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/ps.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/styles/dataimport.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/mp3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/odf.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_janino_commons_compiler_2_7_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_3_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/sql.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/solr.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_antlr4_runtime_4_5_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_dropwizard_metrics_metrics_core_3_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/question-white.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_htrace_htrace_core_3_1_0_incubating.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WEB-INF/log4j.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_cli_commons_cli_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/styles/plugins.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/asterisk.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/xpi.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_core_6_5_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_fusesource_leveldbjni_leveldbjni_all_1_8.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/scripts/dashboard.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/chart.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_classification_6_5_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/network.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/cross-1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_calcite_avatica_avatica_core_1_9_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/txt.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/div.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/toggle-small.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/clipboard-paste.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/cfc.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/partials/plugins.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/folder.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/scripts/analysis.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_3_4_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/ui-radio-button-uncheck.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/tick.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/wmv.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/angular/controllers/analysis.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/partials/logging-levels.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/information-button.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/globe.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/angular/controllers/replication.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/angular/segments.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_1_3_9.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_misc_6_5_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/file.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/jpeg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_snappy_snappy_java_1_0_4_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/server-cast.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/conf.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/folder-tree.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/database.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/angular/common.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/partials/java-properties.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/angular/controllers/plugins.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/angular/controllers/logging.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/table.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/angular/documents.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/information-white.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_backward_codecs_6_5_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/network-status-busy.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/angular-chosen.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/plus-button.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/partials/cloud.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/styles/cloud.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/xvid.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/ui-check-box-uncheck.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WEB-INF/weblogic.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/angular/index.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/chosen.jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/sig.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/partials/query.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_join_6_5_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/hlp.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/prohibition.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_queryparser_6_5_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/databases.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/dashboard.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/require.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/clipboard-paste-document-text.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_stream_stax_api_1_0_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/angular.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/home.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/rpm.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/audio.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/angular/query.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/divx.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/clock-select.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/styles/threads.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/status-offline.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/jquery-2.1.3.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/partials/collection_overview.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/styles/schema-browser.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/angular/plugins.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/hourglass.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/ods.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/styles/replication.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/hammer-screwdriver.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/ui-accordion.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/lib/jquery.cookie.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_client_9_3_14_v20161028.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/scripts/threads.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/lib/jquery.form.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/document-text.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/angular/analysis.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/lib/d3.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_io_9_3_14_v20161028.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/angular/menu.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/aiff.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/asc.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/lib/jquery.sammy.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/angular-sanitize.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_core_1_8_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/loader.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__joda_time_joda_time_2_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_restlet_org_restlet_2_0_M3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/book-open-text.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/angular/controllers/threads.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/angular-sanitize.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_bind_jaxb_impl_2_2_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/angular/schema.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/node-slave.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_highlighter_6_5_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/pdf.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/styles/common.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/angular-cookies.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/sitemap.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/partials/core_overview.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/sxd.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_calcite_calcite_linq4j_1_11_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_java_dev_jets3t_jets3t_0_9_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_5_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_solr_solr_core_6_5_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/hammer.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/doc.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_spatial_extras_6_5_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/styles/index.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/node-design.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_5_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_net_commons_net_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/system-monitor--exclamation.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/molecule.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/partials/files.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/scripts/schema-browser.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/partials/segments.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/rtf.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/block.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/odt.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/angular/controllers/core-overview.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_suggest_6_5_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_analyzers_common_6_5_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_darkphoenixs_log4j_1_2_17.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_daemon_commons_daemon_1_0_13.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_avro_avro_1_7_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_auth_2_7_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/memory.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/documents.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/angular/dashboard.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/deb.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/property.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_expressions_6_5_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/download-cloud.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_math3_3_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_dropwizard_metrics_metrics_jetty9_3_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_servlet_9_3_14_v20161028.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_janino_janino_2_7_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/lib/highlight.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/png.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/angular/controllers/java-properties.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_locationtech_spatial4j_spatial4j_0_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/vsd.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/lib/jquery-1.7.2.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/swf.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/clipboard-list.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/angular/cloud.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_carrotsearch_hppc_0_7_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/angular/controllers/schema.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/funnel-small.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_restlet_org_restlet_ext_servlet_2_0_M3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/ui-address-bar.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/pl.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_thoughtworks_paranamer_paranamer_2_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_core_1_9.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_ben_manes_caffeine_caffeine_2_4_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_restlet_jee_org_restlet_2_3_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/scripts/ping.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/angular-cookies.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/angular-route.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/lib/naturalSort.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/odi.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/system-monitor.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/document-list.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/cpp.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/lib/jquery.ajaxfileupload.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/partials/analysis.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/highlighter-text.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/scripts/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/zone.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_dbcp_commons_dbcp_1_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/sxw.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jettison_jettison_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_mapper_asl_1_9_13.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_solr_solr_solrj_6_5_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_core_asl_1_9_13.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/loader-light.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_compress_1_4_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/query.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/c.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/wooden-box.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_5_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_hynnet_httpcore_4_4_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/cores.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/files.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/segments.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/old.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/angular/controllers/query.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/solr-ico.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/chosen.jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_queries_6_5_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/css.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_lucee_dom4j_1_6_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/partials/dataimport.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/lib/jquery.blockUI.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/network-status-away.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/solr_startup_war_exploded.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/mm.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_all_4_0_23_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_json_1_9.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/angular/stream.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/ppt.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/slash.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/angular/controllers/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_7_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/styles/files.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/ai.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/styles/segments.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_tukaani_xz_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/lib/linker.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_exec_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_hdfs_2_7_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/wav.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_curator_curator_client_2_8_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_digester_commons_digester_1_8.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/enc.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/eml.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/csv.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/partials/collections.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/ogg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_httpclient_commons_httpclient_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/angular/controllers/collections.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/partials/threads.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/lib/chosen.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/video.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/logging.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_xc_1_8_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/dataimport.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/angular-resource.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/angular/controllers/cores.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/odc.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_curator_curator_recipes_2_8_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/lib/jquery.jstree.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/jpg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/styles/cores.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/partials/cores.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_sandbox_6_5_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/scripts/dataimport.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/ui-text-field-select.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_dropwizard_metrics_metrics_jvm_3_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/tar.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_http_9_3_14_v20161028.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/globe-network.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/angular/controllers/segments.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_curator_curator_framework_2_8_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/folder-export.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/js.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_spatial3d_6_5_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/scripts/plugins.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/jquery.jstree.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/xls.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/py.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/lib/console.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/dashboard.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jsp_jsp_api_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/partials/replication.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/users.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/tree.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/ngtimeago.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_directory_server_apacheds_kerberos_codec_2_0_0_M15.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/network-status.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_rewrite_9_3_14_v20161028.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/html.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/bz2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_restlet_jee_org_restlet_ext_servlet_2_3_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/tick-red.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/README" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/xml.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/lucene-ico.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/exclamation-button.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/pgp.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/tgz.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico/clock-select-remain.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_grouping_6_5_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_smile_2_5_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/angular/chosen.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/image.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/php.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/scripts/files.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/filetypes/iso.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_3_6_2_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_woodstox_woodstox_core_asl_4_4_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_security_9_3_14_v20161028.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_calcite_avatica_avatica_metrics_1_9_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Utils/make_pom_from_jars/target/classes/bestway/MakePomFromJars.class" afterPath="$PROJECT_DIR$/../../Utils/make_pom_from_jars/target/classes/bestway/MakePomFromJars.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../solr-startup/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../solr-startup/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Utils/make_pom_from_jars/src/main/java/bestway/MakePomFromJars.java" afterPath="$PROJECT_DIR$/../../Utils/make_pom_from_jars/src/main/java/bestway/MakePomFromJars.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Utils/make_pom_from_jars/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../Utils/make_pom_from_jars/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Utils/make_pom_from_jars/src/main/java/bestway/MakePomFromJars.java" afterPath="$PROJECT_DIR$/../../Utils/make_pom_from_jars/src/main/java/bestway/MakePomFromJars.java" />
     </list>
     <ignored path="solr-startup.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -564,8 +33,8 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.8747698">
-              <caret line="496" column="12" selection-start-line="496" selection-start-column="12" selection-end-line="496" selection-end-column="12" />
+            <state vertical-scroll-proportion="0.89221555">
+              <caret line="489" column="21" selection-start-line="489" selection-start-column="21" selection-end-line="489" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -650,6 +119,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -735,7 +205,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1279,11 +748,12 @@
       <workItem from="1492840131855" duration="37000" />
       <workItem from="1493014428171" duration="2858000" />
       <workItem from="1493102979501" duration="2166000" />
+      <workItem from="1494038400903" duration="662000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19674000" />
+    <option name="totallyTimeSpent" value="20336000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
@@ -1291,14 +761,12 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32887402" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14232409" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23294243" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1308,12 +776,14 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3277592" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3277592" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1434,8 +904,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.8747698">
-          <caret line="496" column="12" selection-start-line="496" selection-start-column="12" selection-end-line="496" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.89221555">
+          <caret line="489" column="21" selection-start-line="489" selection-start-column="21" selection-end-line="489" selection-end-column="21" />
           <folding />
         </state>
       </provider>
