@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:mongo="http://www.springframework.org/schema/data/mongo"
+
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+
+        http://www.springframework.org/schema/data/mongo
+        http://www.springframework.org/schema/data/mongo/spring-mongo.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd
+        http://www.springframework.org/schema/tx
+        http://www.springframework.org/schema/tx/spring-tx.xsd
+        ">
+
+<!--    spring-mongoDB.xml 最基本上三个配置的地方
+        <mongo:mongo-client/> 连接池
+        <mongo:db-factory/>   配置工厂 指定数据库
+        <mongo:template/>     配置MongoTemplate模板类-->
+
+
+        <context:property-placeholder location="classpath:mongoDB.properties" ignore-unresolvable="true"/>
+
+        <!-- spring连接mongodb数据库的配置       credentials的配置形式是：用户名:密码@默认数据库-->
+        <!--<mongo:mongo-client id="mongoClient" host="${mongo.host}" port="${mongo.port}" credentials="${mongo.username}:${mongo.password}@${mongo.dbname}">-->
+        <mongo:mongo-client id="mongoClient" host="${mongo.host}" port="${mongo.port}">
+            <!--      可选配置
+            <mongo:client-options write-concern="SAFE"
+                   connections-per-host="${mongo.connectionsPerHost}"
+                   threads-allowed-to-block-for-connection-multiplier="${mongo.threadsAllowedToBlockForConnectionMultiplier}"
+                   connect-timeout="${mongo.connectTimeout}"
+                   max-wait-time="${mongo.maxWaitTime}"
+                   socket-timeout="${mongo.socketTimeout}"/>
+            -->
+        </mongo:mongo-client>
+
+        <!--mongo的db-factory-->
+        <mongo:db-factory  id="mongoDbFactory" dbname="${mongo.database}" mongo-ref="mongoClient" />
+
+        <!-- 1.Spring提供的mongodb操作模板-->
+        <mongo:template id="mongoTemplate" db-factory-ref="mongoDbFactory" write-concern="NORMAL"/>
+        <!-- 2.Spring提供的mongodb操作模板（另一种配置方式）-->
+        <!--<bean id="mongoTemplate" class="org.springframework.data.mongodb.core.MongoTemplate">
+            <constructor-arg name="mongoDbFactory" ref="mongoDbFactory" />
+        </bean>-->
+
+        <!--MongoDB GridFS Template 支持，操作mongodb存放的文件。-->
+        <!--<mongo:mapping-converter id="converter" db-factory-ref="mongoDbFactory" base-package="com.jason.demo.dao"/>
+        <mongo:gridFsTemplate id="gridFsTemplcate" db-factory-ref="mongoDbFactory" converter-ref="converter" />-->
+
+        <!--mongodb bean的仓库目录，会自动扫描扩展了MongoRepository接口的接口进行注入。-->
+        <!--<mongo:repositories base-package="com.jason.demo.repository" />-->
+</beans>
+
+<!--        采用基于mongo:mongo-client标签进行安全配置，mongo要求spring-mongo.xsd必须是1.6及以上的版本。我们这里选用的是1.7.
+        上述这个错误，需要在spring-mongo.xml文件中添加下面的两行内容
+        http://www.springframework.org/schema/data/repository
+        http://www.springframework.org/schema/data/repository/spring-repository-1.7.xsd-->
+
+        <!-- 1.7版本+不支持mongo,支持mongo-client,options为client-options -->
+        <!-- Usage of 'UserCredentials' with 'MongoClient' is no longer supported -->
+        <!-- 配置mongodb连接池 ,创建mongoClient实例-->
+        <!--credentials="mongodb://${mongo.user}:${mongo.pwd}@${mongo.host}:${mongo.port}/${mongo
+        .defaultDbName}"为什么不起作用
+        如果需要验证,mongo-client需要加这句: credentials="${mongo.user}:${mongo.pwd}@${mongo.defaultDbName}"
+        -->

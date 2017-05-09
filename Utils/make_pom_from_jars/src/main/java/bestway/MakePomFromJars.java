@@ -21,7 +21,7 @@ import java.util.jar.Manifest;
  * 执行后将在JAR_ADDRESS路径下生成一个jar_to_pom.xml
  */
 public class MakePomFromJars {
-    private static final String JAR_ADDRESS = "F:\\My_Training\\Hibernate\\demo2\\lib";
+    private static final String JAR_ADDRESS = "F:\\My_Training\\Solr\\demo\\WEB-INF\\lib";
     
     public static void main(String[] args) throws IOException, DocumentException {
         Element dependencys = new DOMElement("dependencies");

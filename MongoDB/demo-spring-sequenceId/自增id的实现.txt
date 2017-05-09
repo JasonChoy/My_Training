@@ -1,0 +1,10 @@
+com.jason.demo.listener.SaveMongoEventListener  提供一个监听器
+
+<!--注入自增id的监听器-->
+<bean class="com.jason.demo.listener.SaveMongoEventListener"></bean>
+
+com.jason.demo.domain.SequenceId  提供一个集合保存seqId
+
+com.jason.demo.annotation.GeneratedValue  一个注解 标记哪个字段作为主键
+
+然后直接save(user）  监听会自动设置id

@@ -1,7 +1,7 @@
 package com.jason.demo.test;
 
+import com.jason.demo.clientWSDL.IHelloService;
 import com.jason.demo.clientWSDL.JasonCaiHello;
-import com.jason.demo.service.IHelloService;
 import org.junit.Test;
 
 import javax.xml.namespace.QName;
@@ -36,7 +36,7 @@ public class ClientTest {
         QName sname = new QName("http://impl.service.demo.jason.com/","JasonCaiHello");
 
         JasonCaiHello service = new JasonCaiHello(url,sname);
-        com.jason.demo.clientWSDL.IHelloService port = service.getHelloServiceImplPort();
+        IHelloService port = service.getHelloServiceImplPort();
         port.login("jasoncai","123456");
     }
 
