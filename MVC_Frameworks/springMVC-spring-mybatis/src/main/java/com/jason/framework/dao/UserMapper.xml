@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace 命名空间，作用就是对sql进行分类化管理,理解为sql隔离
+ 注意：使用mapper代理方法开发，namespace有特殊重要的作用
+ -->
+<mapper namespace="com.jason.framework.dao.UserMapper">
+
+    <select id="getAll" resultType="User">
+        SELECT * FROM  user
+    </select>
+
+    <select id="getByid" parameterType="int" resultType="User">
+        SELECT * FROM  user  WHERE id=#{value}
+    </select>
+
+    <select id="insert" parameterType="User" >
+        insert into user (id, username, birthday,sex, address)
+        values (#{id}, #{username}, #{birthday}, #{sex}, #{address})
+    </select>
+    
+    <select id="update" parameterType="User" >
+      update user
+      set username = #{username},
+          birthday = #{birthday},
+          sex = #{sex},
+          address = #{address}
+      where id = #{id}
+    </select>
+    <select id="delete" parameterType="int" resultType="User">
+        DELETE * from user where  id=#{value}
+    </select>
+
+</mapper>

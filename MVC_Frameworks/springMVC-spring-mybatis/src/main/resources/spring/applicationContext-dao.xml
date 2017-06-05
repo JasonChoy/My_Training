@@ -1,0 +1,63 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+    http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+    <!--    配置：
+                    数据源
+                    SqlSessionFactory
+                    mapper扫描器-->
+
+
+    <!-- 加载db.properties文件中的内容，db.properties文件中key命名要有一定的特殊规则 -->
+    <context:property-placeholder location="classpath:db.properties" />
+
+    <!-- 配置第三方Druid数据库 可通过监控功能看到结果 -->
+    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
+        <property name="driverClassName" value="${jdbc.driverClassName}"/>
+        <property name="url" value="${jdbc.url}" />
+        <property name="username" value="${jdbc.username}" />
+        <property name="password" value="${jdbc.password}" />
+        <!-- 配置初始化大小、最小、最大 -->
+        <property name="initialSize" value="${initialSize}" />
+        <property name="minIdle" value="${minIdle}" />
+        <property name="maxActive" value="${maxActive}" />
+        <!-- 配置获取连接等待超时的时间 -->
+        <property name="maxWait" value="${maxWait}" />
+        <!-- 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒 -->
+        <property name="timeBetweenEvictionRunsMillis" value="${timeBetweenEvictionRunsMillis}" />
+        <!-- 配置一个连接在池中最小生存的时间，单位是毫秒 -->
+        <property name="minEvictableIdleTimeMillis" value="${minEvictableIdleTimeMillis}" />
+        <property name="validationQuery" value="${validationQuery}" />
+        <property name="testWhileIdle" value="${testWhileIdle}" />
+        <property name="testOnBorrow" value="${testOnBorrow}" />
+        <property name="testOnReturn" value="${testOnReturn}" />
+        <!-- 打开PSCache，并且指定每个连接上PSCache的大小 -->
+        <property name="poolPreparedStatements" value="${poolPreparedStatements}" />
+        <property name="maxPoolPreparedStatementPerConnectionSize" value="${maxPoolPreparedStatementPerConnectionSize}" />
+        <!-- 配置监控统计拦截的filters -->
+        <property name="filters" value="${filters}" />
+    </bean>
+
+    <!-- 从整合包里找，org.mybatis:mybatis-spring:1.2.4 -->
+    <!-- sqlSessionFactory -->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <!-- 数据库连接池 -->
+        <property name="dataSource" ref="dataSource" />
+        <!-- 加载mybatis的全局配置文件 -->
+        <property name="configLocation" value="classpath:mybatis/sqlMapConfig.xml" />
+    </bean>
+    <!-- mapper扫描器 -->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <!-- 扫描包路径，如果需要扫描多个包，中间使用半角逗号隔开 -->
+        <property name="basePackage" value="com.jason.framework.dao"/>
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
+        <!-- <property name="sqlSessionFactory" ref="sqlSessionFactory" />
+        会导致数据源配置不管用，数据库连接不上。
+        且spring 4弃用
+        -->
+    </bean>
+
+</beans>

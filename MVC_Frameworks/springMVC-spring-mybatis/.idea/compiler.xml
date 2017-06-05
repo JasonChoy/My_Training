@@ -17,18 +17,16 @@
       <profile default="true" name="Default" enabled="false">
         <processorPath useClasspath="true" />
       </profile>
-      <profile default="false" name="Maven default annotation processors profile" enabled="true">
+      <profile default="false" name="Annotation profile for springMVC-spring-mybatis" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="demo-redis-spring1" />
-        <module name="demo-redis-spring2" />
+        <module name="springMVC-spring-mybatis" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="demo-redis-spring1" target="1.5" />
-      <module name="demo-redis-spring2" target="1.5" />
+    <bytecodeTargetLevel target="1.7">
+      <module name="springMVC-spring-mybatis" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>
