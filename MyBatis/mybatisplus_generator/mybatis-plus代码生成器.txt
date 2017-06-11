@@ -1,0 +1,124 @@
+代码生成器
+    在代码生成之前，首先进行配置，MP提供了大量的自定义设置，生成的代码完全能够满足各类型的需求，如果你发现配置不能满足你的需求，
+    欢迎提交issue和pull-request，有兴趣的也可以查看源码进行了解。
+参数说明
+参数相关的配置，详见源码
+
+主键策略选择
+    MP支持以下4中主键策略，可根据需求自行选用：
+    值	                    描述
+    IdType.AUTO	            数据库ID自增
+    IdType.INPUT	        用户输入ID
+    IdType.ID_WORKER	    全局唯一ID，内容为空自动填充（默认配置）
+    IdType.UUID	            全局唯一ID，内容为空自动填充
+    AUTO、INPUT和UUID大家都应该能够明白，这里主要讲一下ID_WORKER。首先得感谢开源项目Sequence，感谢作者李景枫。
+        什么是Sequence？简单来说就是一个分布式高效有序ID生产黑科技工具，思路主要是来源于Twitter-Snowflake算法。这里不详细讲解Sequence，有兴趣的朋友请点此去了解Sequence。
+        MP在Sequence的基础上进行部分优化，用于产生全局唯一ID，好的东西希望推广给大家，所以我们将ID_WORDER设置为默认配置。
+
+表及字段命名策略选择
+    在MP中，我们建议数据库表名采用下划线命名方式，而表字段名采用驼峰命名方式。
+    这么做的原因是为了避免在对应实体类时产生的性能损耗，这样字段不用做映射就能直接和实体类对应。
+    当然如果项目里不用考虑这点性能损耗，那么你采用下滑线也是没问题的，只需要在生成代码时配置dbColumnUnderline属性就可以。
+
+如何生成代码
+    方式一、代码生成 main方法 介绍点这http://mp.baomidou.com/#/generate-code
+            首先添加依赖
+                <!-- 模板引擎 -->
+                <dependency>
+                    <groupId>org.apache.velocity</groupId>
+                    <artifactId>velocity</artifactId>
+                    <version>1.7</version>
+                </dependency>
+
+                <!-- MP 核心库 -->
+                <dependency>
+                    <groupId>com.baomidou</groupId>
+                    <artifactId>mybatis-plus</artifactId>
+                    <version>最新版本</version>
+                </dependency>
+            配置并运行com.jason.demo.common.MybatisPlusGenerator
+    方式二、Maven插件生成       介绍点这 http://git.oschina.net/baomidou/mybatisplus-maven-plugin
+            pom.xml 添加mybatisplus-maven-plugin  并配置
+                    <plugin>
+                        <groupId>com.baomidou</groupId>
+                        <artifactId>mybatisplus-maven-plugin</artifactId>
+                        <version>1.0</version>
+                        <configuration>
+                            <!-- 执行快捷命令 mvn mp:generate -->
+                            <goalPrefix>mp</goalPrefix>
+                            <skipErrorNoDescriptorsFound>true</skipErrorNoDescriptorsFound>
+                            <!--生成完是否打开目录-->
+                            <open>false</open>
+                            <!-- 输出目录(默认java.io.tmpdir) -->
+                            <outputDir>F:\Programming WorkSpace\My_Training\MyBatis\mybatisplus_generator\src\main\java</outputDir>
+                            <!-- 是否覆盖同名文件(默认false) -->
+                            <fileOverride>true</fileOverride>
+                            <!-- mapper.xml 中添加二级缓存配置(默认true) -->
+                            <enableCache>true</enableCache>
+                            <!-- 开发者名称 -->
+                            <author>JasonChoi</author>
+                            <!-- 是否开启 ActiveRecord 模式(默认true) -->
+                            <activeRecord>false</activeRecord>
+                            <!-- 数据源配置，( **必配** ) -->
+                            <dataSource>
+                                <driverName>com.mysql.jdbc.Driver</driverName>
+                                <url>jdbc:mysql://127.0.0.1:3306/mybatis-plus?characterEncoding=utf8</url>
+                                <username>root</username>
+                                <password>root</password>
+                            </dataSource>
+                            <strategy>
+                                <!-- 字段生成策略，四种类型，从名称就能看出来含义
+                                        nochange(默认),
+                                        underline_to_camel,(下划线转驼峰)
+                                        remove_prefix,(去除第一个下划线的前部分，后面保持不变)
+                                        remove_prefix_and_camel(去除第一个下划线的前部分，后面转驼峰) -->
+                                <naming>underline_to_camel</naming>
+                                <!-- 表前缀 -->
+                                <!--<tablePrefix>bmd_</tablePrefix>-->
+                                <!--Entity中的ID生成策略（默认 id_worker）
+                                        AUTO(0, "数据库ID自增"),
+                                        INPUT(1, "用户输入ID"),
+                                        ID_WORKER(2, "全局唯一ID"),
+                                        UUID(3, "全局唯一ID"),
+                                        NONE(4, "该类型为未设置主键类型");
+                                -->
+                                <idGenType>uuid</idGenType>
+                                <!--自定义超类 -->
+                                <!--<superServiceClass>net.hyman.base.BaseService</superServiceClass> -->
+                                <!-- 要包含的表 与exclude 二选一配置 -->
+                                <!--<include> -->
+                                    <!--<property>sec_user</property> -->
+                                    <!--<property>table1</property> -->
+                                <!--</include> -->
+                                <!-- 要排除的表 -->
+                                <!--<exclude> -->
+                                    <!--<property>schema_version</property> -->
+                                <!--</exclude> -->
+                            </strategy>
+                            <packageInfo>
+                                <!-- 父级包名称，如果不写，下面的service等就需要写全包名(默认com.baomidou) -->
+                                <parent>com.jason.demo</parent>
+                                <!--service包名(默认service) -->
+                                <service>service</service>
+                                <!--serviceImpl包名(默认service.impl) -->
+                                <serviceImpl>service.impl</serviceImpl>
+                                <!--entity包名(默认entity) -->
+                                <entity>entity</entity>
+                                <!--mapper包名(默认mapper) -->
+                                <mapper>mapper</mapper>
+                                <!--xml包名(默认mapper.xml) -->
+                                <xml>mapper.xml</xml>
+                            </packageInfo>
+                            <template>
+                                <!-- 定义controller模板的路径 -->
+                                <!--<controller>/template/controller1.java.vm</controller> -->
+                            </template>
+                        </configuration>
+                        <dependencies>
+                            <dependency>
+                                <groupId>mysql</groupId>
+                                <artifactId>mysql-connector-java</artifactId>
+                                <version>5.1.38</version>
+                            </dependency>
+                        </dependencies>
+                    </plugin>
