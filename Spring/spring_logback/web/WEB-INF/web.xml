@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+		  http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+           version="3.0">
+    <!-- start 加载Spring容器 -->
+    <context-param>
+        <description>Spring容器配置文件</description>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>classpath:spring/applicationContext-*.xml</param-value>
+    </context-param>
+    <listener>
+        <description>Spring监听器</description>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+    <listener>
+        <description>防止Spring内存溢出监听器</description>
+        <listener-class>org.springframework.web.util.IntrospectorCleanupListener</listener-class>
+    </listener>
+    <!-- end 加载Spring容器 -->
+
+    <!-- 添加日志监听器 -->
+    <context-param>
+        <param-name>logbackConfigLocation</param-name>
+        <param-value>classpath:logback.xml</param-value>
+    </context-param>
+    <listener>
+        <listener-class>ch.qos.logback.ext.spring.web.LogbackConfigListener</listener-class>
+    </listener>
+
+    <!-- start SpringMVC 前端控制器-->
+    <servlet>
+        <servlet-name>SpringMVC</servlet-name>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        <init-param>
+            <description>SpringMVC</description>
+            <param-name>contextConfigLocation</param-name>
+            <param-value>classpath:spring/applicationContext-mvc.xml</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SpringMVC</servlet-name>
+        <!--
+        第一种:*.action,访问以.action三结尾，由DispatcherServlet进行解析
+        第二种:/,所有访问的地址由DispatcherServlet进行解析，对静态文件的解析需要配置不让DispatcherServlet进行解析，
+                使用此种方式和实现RESTful风格的url
+        第三种:/*,这样配置不对，使用这种配置，最终要转发到一个jsp页面时，仍然会由DispatcherServlet解析jsp地址，
+                不能根据jsp页面找到handler，会报错
+        -->
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+    <!-- end SpringMVC 前端控制器-->
+</web-app>
